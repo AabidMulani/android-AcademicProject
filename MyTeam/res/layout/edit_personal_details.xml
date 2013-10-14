@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/mt_mainbackground">
+
+    <TextView
+        android:id="@+id/EPD_HEADER"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/MyTeam_HeaderColor"
+        android:background="@drawable/main_back_blue12"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="@string/Edit_msg"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/EPD_Personal_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EPD_HEADER"
+        android:layout_margin="15dp"
+        android:padding="20dip"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:background="@drawable/button_bk_theme"
+        android:text="@string/Personal_details_msg" />
+
+    <Button
+        android:id="@+id/EPD_Contact_detils"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EPD_Personal_details"
+        android:layout_margin="15dp"
+        android:padding="20dip"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:background="@drawable/button_bk_theme"
+        android:text="@string/Contact_details_msg" />
+
+    <Button
+        android:id="@+id/EPD_Submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:background="@drawable/button_bk_theme"
+        android:text="@string/Update_msg" />
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MemberDetailsActivity" 
+    android:background="@drawable/mt_mainbackground">
+
+    <RelativeLayout
+        android:id="@+id/LDS_user_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LDS_LoginDetails"
+        android:layout_centerInParent="true"
+        android:layout_margin="18dp" >
+
+        <TextView
+            android:id="@+id/LDS_User_lbl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/Userid_msg"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/MyTeam_TextColor" />
+
+        <EditText
+            android:id="@+id/LDS_username_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LDS_User_lbl"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:gravity="center"
+            android:inputType="textCapCharacters"
+            android:singleLine="true"
+            android:textColorHint="@color/MyTeam_TextColor"
+            android:textSize="25sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/LDS_check_availibility"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LDS_username_txt"
+            android:text="@string/CheckAvail_msg"
+            android:singleLine="false"
+            android:padding="20dip"
+            android:textColor="@color/MyTeam_ButtonColor"
+            android:background="@drawable/button_bk_theme" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LDS_password_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LDS_user_layout"
+        android:layout_centerInParent="true"
+        android:layout_margin="18dp" >
+
+        <TextView
+            android:id="@+id/LDS_pass_lbl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/Password_msg"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/MyTeam_TextColor" />
+
+        <EditText
+            android:id="@+id/LDS_Password_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LDS_pass_lbl"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:gravity="center"
+            android:textColor="@color/MyTeam_TextColor"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textSize="25sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/LDS_REpass_lbl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/LDS_Password_txt"
+            android:gravity="center"
+            android:text="@string/Pass_Reenter_Hint"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/MyTeam_TextColor" />
+
+        <EditText
+            android:id="@+id/LDS_RePassword_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LDS_REpass_lbl"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/MyTeam_TextColor"
+            android:textSize="25sp" >
+        </EditText>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/LDS_LoginDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_back_blue12"
+        android:padding="10dip"
+        android:gravity="center"
+        android:textColor="@color/MyTeam_HeaderColor"
+        android:text="@string/Login_details_msg"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/LDS_Submit_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:layout_marginLeft="70dip"
+        android:layout_marginRight="70dip"
+        android:layout_alignLeft="@+id/LDS_LoginDetails"
+        android:layout_alignRight="@+id/LDS_LoginDetails"
+        android:layout_below="@+id/LDS_password_layout"
+        android:background="@drawable/button_bk_theme"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:text="@string/Submit_msg" />
+
+</RelativeLayout>

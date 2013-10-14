@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/notification_board_bk" 
+    android:layout_margin="3dip"
+    android:padding="3dip">
+
+    <TextView
+        android:id="@+id/Notification_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dip"
+        android:gravity="center"
+        android:textColor="@color/MyTeam_TextColor"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mt_mainbackground"
+    tools:context=".MemberDetailsActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CDS_ContactDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="38dp" >
+
+        <EditText
+            android:id="@+id/CDS_Addr_Txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CDS_ContactDetails"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:textColor="@color/MyTeam_TextColor"
+            android:gravity="center"
+            android:hint="@string/Address_Hint"
+            android:inputType="textPostalAddress"
+            android:lines="2"
+            android:maxLines="4"
+            android:minLines="2"
+            android:textColorHint="@color/CornflowerBlue" />
+
+        <EditText
+            android:id="@+id/CDS_City_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CDS_Addr_Txt"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:textColor="@color/MyTeam_TextColor"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/City_Hint"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColorHint="@color/CornflowerBlue" />
+
+        <LinearLayout
+            android:id="@+id/CDS_state_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CDS_City_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/text_bk_theme"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/CDS_StateSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:nextFocusDown="@+id/CDS_Mobile_txt"
+                android:background="@drawable/text_bk_theme"
+                android:entries="@array/state_list"
+                android:textColor="@color/MyTeam_TextColor"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/CDS_Mobile_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CDS_state_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:textColor="@color/MyTeam_TextColor"
+            android:gravity="center"
+            android:hint="@string/Mobile_Hint"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColorHint="@color/CornflowerBlue" />
+
+        <LinearLayout
+            android:id="@+id/CDS_Btton_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CDS_Mobile_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:padding="20dip" >
+
+            <Button
+                android:id="@+id/CDS_Back_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/BACK_msg"
+                android:textColor="@color/MyTeam_ButtonColor"
+                android:layout_margin="5dip"
+                android:padding="20dip"
+                android:background="@drawable/button_bk_theme"/>
+
+            <Button
+                android:id="@+id/CDS_Proceed_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="@string/NEXT_msg"
+                android:layout_margin="5dip"
+                android:textColor="@color/MyTeam_ButtonColor"
+                android:padding="20dip"
+                android:background="@drawable/button_bk_theme" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/CDS_ContactDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_back_blue12"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textColor="@color/MyTeam_HeaderColor"
+        android:text="@string/Contact_details_msg"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

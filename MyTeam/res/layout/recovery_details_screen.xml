@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mt_mainbackground"
+    tools:context=".MemberDetailsActivity" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RDS_RecoveryDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="38dp" >
+
+        <LinearLayout
+            android:id="@+id/RDS_Question_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:background="@drawable/text_bk_theme"
+            android:orientation="vertical" >
+
+            <Spinner
+                android:id="@+id/RDS_QuestionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:textColor="@color/MyTeam_TextColor"
+                android:entries="@array/Question_List"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/RDS_Answer_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RDS_Question_layout"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dip"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:gravity="center"
+            android:hint="@string/Answer_Hint"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColorHint="@color/MyTeam_TextColor" >
+        </EditText>
+
+        <Button
+            android:id="@+id/RDS_Proceed_Btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dip"
+            android:textColor="@color/MyTeam_ButtonColor"
+            android:layout_marginRight="70dip"
+            android:layout_below="@+id/RDS_Answer_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_bk_theme"
+        	android:padding="20dip"
+            android:text="@string/NEXT_msg" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/RDS_RecoveryDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_back_blue12"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textColor="@color/MyTeam_HeaderColor"
+        android:text="@string/Recovery_details_msg"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/chat_exitchat" android:title="CLOSE CHAT"></item>
+    <item android:id="@+id/chat_memberList" android:title="LIST"></item>
+    <item android:id="@+id/chat_home" android:title="HOME"></item>
+    <item android:id="@+id/chat_closethischat" android:title="END THIS CHAT"></item>
+    
+
+</menu>

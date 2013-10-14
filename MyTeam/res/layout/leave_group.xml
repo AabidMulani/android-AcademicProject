@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/mt_mainbackground">
+
+    <TextView
+        android:id="@+id/LG_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_back_blue12"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="LEAVE GROUP"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/MyTeam_HeaderColor" />
+    
+    <TextView
+        android:id="@+id/LG_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@+id/LG_header"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:textColor="@color/MyTeam_TextColor"
+        android:text="ARE YOU SURE YOU WANT TO LEAVE THIS GROUP?"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/LG_CONFIRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LG_msg"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:padding="20dip"
+        android:background="@drawable/button_bk_theme"
+        android:text="@string/confirm_msg" />
+
+</RelativeLayout>

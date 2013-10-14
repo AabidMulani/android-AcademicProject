@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mt_mainbackground"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ML_TitleTxtView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_back_blue12"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="CHAT WINDOW"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/MyTeam_HeaderColor" />
+
+    <HorizontalScrollView
+        android:id="@+id/ML_btnScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ML_StatusTextView" >
+
+        <LinearLayout
+            android:id="@+id/ML_btn_LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- Buttons will be here -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/ML_StatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ML_TitleTxtView"
+         android:layout_centerHorizontal="true"
+        android:text="NO Chat Members Added..."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/MyTeam_TextColor" />
+
+    <ScrollView
+        android:id="@+id/ML_chatscrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ML_msgbodytxt"
+        android:layout_below="@+id/ML_btnScrollView1" >
+
+        <FrameLayout
+            android:id="@+id/ML_chatframelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!-- Dynamic linear layout here... -->
+        </FrameLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/ML_msgbodytxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ML_sendchatbtn"
+        android:background="@drawable/text_bk_theme"
+        android:ems="10"
+        android:textColor="@color/MyTeam_TextColor"
+        android:hint="ENTER YOUR MSG HERE" >
+    </EditText>
+
+    <Button
+        android:id="@+id/ML_sendchatbtn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+        android:background="@drawable/button_bk_theme"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:text="SEND" />
+
+</RelativeLayout>

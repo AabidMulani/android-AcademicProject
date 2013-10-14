@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/member_list_inflatr_bk"
+        android:padding="8dip" >
+
+        <ImageView
+            android:id="@+id/MIL_image"
+            android:layout_width="80dip"
+            android:layout_height="70dip"
+            android:layout_alignBottom="@+id/MIL_Designation_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/MIL_Name_txt"
+            android:layout_marginLeft="10dip"
+            android:src="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/MIL_Name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/MIL_image"
+            android:gravity="left"
+            android:padding="4dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="3dip"
+            android:textColor="@color/MyTeam_TextColor" />
+
+        <TextView
+            android:id="@+id/MIL_Designation_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MIL_Name_txt"
+            android:layout_toRightOf="@+id/MIL_image"
+            android:gravity="left"
+            android:padding="4dip"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="3dip"
+            android:textColor="@color/MyTeam_TextColor" />
+    </RelativeLayout>
+
+</LinearLayout>

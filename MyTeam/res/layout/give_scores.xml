@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/GS_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/MyTeam_TextColor"
+        android:layout_marginTop="15dp"
+        android:text="@string/For_Task_Id_msg"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/GS_TaskID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/GS_Label"
+        android:layout_alignBottom="@+id/GS_Label"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/GS_Label"
+		android:textColor="@color/MyTeam_TextColor"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RatingBar
+        android:id="@+id/GS_ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GS_TaskID"
+        android:numStars="5"
+        android:stepSize="1"
+        android:max="5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

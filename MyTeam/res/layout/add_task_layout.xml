@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mt_mainbackground" >
+
+    <TextView
+        android:id="@+id/Header_Txt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_back_blue12"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/MyTeam_HeaderColor" />
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Header_Txt"
+        android:layout_above="@+id/linearLayout1"
+        android:fillViewport="true"
+        >
+        <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mt_mainbackground" >
+    <TextView
+        android:id="@+id/ATL_TV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ATL_DescTxt"
+        android:padding="2dp"
+        android:text="@string/EstimatedDeadline_msg"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/MyTeam_TextColor" />
+
+    <EditText
+        android:id="@+id/ATL_DescTxt"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ATL_TV3"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_bk_theme"
+        android:ellipsize="start"
+        android:ems="10"
+        android:hint="@string/TaskDesc_msg"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:minLines="3"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarSize="5dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/DarkGray"
+        android:textColorHint="@color/MyTeam_TextColor"
+        android:textSize="12sp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/ATL_Start_Date_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ATL_Start_Date_Btn"
+        android:layout_below="@+id/ATL_TV4"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/UnsetDate_msg"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/MyTeam_TextColor" />
+
+    <Button
+        android:id="@+id/ATL_Start_Date_Btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ATL_End_Date_Btn"
+        android:layout_alignBottom="@+id/ATL_End_Date_Btn"
+        android:layout_alignLeft="@+id/ATL_DescTxt"
+        android:background="@drawable/button_bk_theme"
+        android:nextFocusDown="@+id/ATL_End_Date_Btn"
+        android:padding="10dip"
+        android:text="@string/StartDt_msg"
+        android:textColor="@color/MyTeam_ButtonColor" />
+
+    <Button
+        android:id="@+id/ATL_End_Date_Btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ATL_DescTxt"
+        android:layout_below="@+id/ATL_Start_Date_View"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bk_theme"
+        android:padding="10dip"
+        android:text="@string/EndDt_msg"
+        android:textColor="@color/MyTeam_ButtonColor" />
+
+    <TextView
+        android:id="@+id/ATL_End_Date_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ATL_End_Date_Btn"
+        android:layout_alignRight="@+id/ATL_End_Date_Btn"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/UnsetDate_msg"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/MyTeam_TextColor" />
+
+    <EditText
+        android:id="@+id/ATL_Subject_Txt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ATL_Location_Txt"
+        android:layout_below="@+id/ATL_Title_txt"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_bk_theme"
+        android:ellipsize="start"
+        android:ems="20"
+        android:gravity="center"
+        android:hint="@string/TaskSubj_msg"
+        android:singleLine="true"
+        android:textColor="@color/MyTeam_TextColor" />
+
+    <EditText
+        android:id="@+id/ATL_Title_txt"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Header_Txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_bk_theme"
+        android:ellipsize="middle"
+        android:ems="20"
+        android:gravity="center"
+        android:hint="@string/TaskTitle_msg"
+        android:singleLine="true"
+        android:textColor="@color/MyTeam_TextColor" />
+
+    <TextView
+        android:id="@+id/ATL_TV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ATL_Subject_Txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/TaskDESCRIPTION_msg"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/MyTeam_TextColor" />
+
+    <EditText
+        android:id="@+id/ATL_Location_Txt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ATL_Start_Date_Btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_bk_theme"
+        android:ellipsize="start"
+        android:ems="20"
+        android:gravity="center"
+        android:hint="@string/TaskLocation_msg"
+        android:singleLine="true"
+        android:textColor="@color/MyTeam_TextColor" />
+ </RelativeLayout>
+  </ScrollView>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/ATL_CloseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_bk_theme"
+            android:padding="20dip"
+            android:text="@string/BACK_msg"
+            android:textColor="@color/MyTeam_ButtonColor" />
+
+        <Button
+            android:id="@+id/ATL_ProceedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_bk_theme"
+            android:padding="20dip"
+            android:text="@string/PROCEED_msg"
+            android:textColor="@color/MyTeam_ButtonColor" />
+    </LinearLayout>
+
+   
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mt_mainbackground"
+    tools:context=".MemberDetailsActivity" >
+
+    <LinearLayout
+        android:id="@+id/ET_main_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ET_LoginDetails"
+        android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:id="@+id/ET_leader_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_bk_theme"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/ET_Leader_Btn"
+                android:layout_width="150dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/MyTeam_ButtonColor"
+                android:background="@drawable/leader_img" />
+
+            <TextView
+                android:id="@+id/ET_textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/MyTeam_TextColor"
+                android:layout_toRightOf="@+id/ET_Leader_Btn"
+                android:text="@string/Leader_msg"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ET_member_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dip"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_bk_theme"
+            android:clickable="true" >
+
+            <Button
+                android:id="@+id/ET_Member_Btn"
+                android:layout_width="150dip"
+                android:layout_height="fill_parent"
+                android:textColor="@color/MyTeam_ButtonColor"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/members" />
+
+            <TextView
+                android:id="@+id/ET_textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ET_Member_Btn"
+                android:textColor="@color/MyTeam_TextColor"
+                android:text="@string/Member_msg"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ET_LoginDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_back_blue12"
+        android:gravity="center"
+        android:textColor="@color/MyTeam_HeaderColor"
+        android:padding="10dip"
+        android:text="@string/EmployeeType_Hdr_msg"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

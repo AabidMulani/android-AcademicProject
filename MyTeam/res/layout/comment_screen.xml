@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mt_mainbackground"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/CS_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/MyTeam_TextColor" />
+
+    <Button
+        android:id="@+id/CS_Back_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:background="@drawable/button_bk_theme"
+        android:text="@string/BACK_msg" />
+
+    <Button
+        android:id="@+id/CS_AddComment_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CS_Back_Btn"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:padding="10dip"
+        android:layout_margin="5dip"
+        android:background="@drawable/button_bk_theme"
+        android:text="@string/AddComment_msg" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CS_AddComment_Btn" >
+
+        <LinearLayout
+            android:id="@+id/CS_Comment_List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip" 
+            android:orientation="vertical">
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

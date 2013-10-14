@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/other_menu_logout" android:enabled="true" android:title="Log Out" android:visible="true"></item>
+    <item android:id="@+id/other_menu_help" android:enabled="true" android:title="Help" android:visible="true"></item>
+    <item android:id="@+id/other_menu_credits" android:enabled="true" android:title="Credits" android:visible="true"></item>
+    
+</menu>

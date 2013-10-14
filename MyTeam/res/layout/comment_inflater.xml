@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="@drawable/comment_border">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/CI_Member_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="@color/MyTeam_HeaderColor"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/CI_DateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="@color/MyTeam_HeaderColor"
+            android:gravity="right"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/CI_CommentText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_margin="5dip"
+        android:background="@drawable/comment_text"
+        android:minLines="2"
+        android:singleLine="false"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/MyTeam_HeaderColor" />
+
+</RelativeLayout>

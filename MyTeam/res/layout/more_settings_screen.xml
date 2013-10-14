@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/mt_mainbackground">
+    
+    <TextView
+        android:id="@+id/MSS_Header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_back_blue12"
+        android:text="MORE"
+        android:gravity="center"
+        android:textColor="@color/MyTeam_HeaderColor"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+<LinearLayout
+        android:id="@+id/MSS_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dip" >
+
+        <Button
+            android:id="@+id/MSS_Home_Btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="0.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/home_icon_theme" />
+
+        <Button
+            android:id="@+id/MSS_Task_Btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/task_icon_theme" />
+
+        <Button
+            android:id="@+id/MSS_Team_Btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/team_icon_theme" />
+
+        <Button
+            android:id="@+id/MSS_More_Btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/more_icon_theme" />
+
+        <Button
+            android:id="@+id/MSS_chat_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dip"
+            android:layout_weight="0.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/chat_icon1_theme" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/MSS_edit_personal_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MSS_Header"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bk_theme"
+        android:padding="20dip"
+        android:layout_margin="15dp"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:text="EDIT PERSONAL DETAILS" />
+    
+    
+    <Button
+        android:id="@+id/MSS_edit_email_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MSS_edit_personal_details"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_bk_theme"
+        android:padding="20dip"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:text="EDIT EMAIL DETAILS" />
+    
+        <Button
+        android:id="@+id/MSS_edit_login_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MSS_edit_email_details"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bk_theme"
+        android:padding="20dip"
+        android:layout_margin="15dp"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:text="EDIT LOGIN DETAILS" />
+    
+    
+    <Button
+        android:id="@+id/MSS_leave_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MSS_edit_login_details"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bk_theme"
+        android:padding="20dip"
+        android:layout_margin="15dp"
+        android:textColor="@color/MyTeam_ButtonColor"
+        android:text="LEAVE GROUP" />
+    
+</RelativeLayout>

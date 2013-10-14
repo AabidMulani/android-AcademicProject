@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MemberDetailsActivity"
+    android:background="@drawable/mt_mainbackground" >
+
+    <TextView
+        android:id="@+id/PDS_PersonalDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_back_blue12"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="@string/Personal_details_msg"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/MyTeam_HeaderColor" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PDS_PersonalDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="38dp" >
+
+        <EditText
+            android:id="@+id/PDS_firstname_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PDS_PersonalDetails"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dip"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:gravity="center"
+            android:hint="@string/First_name_Hint"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColorHint="@color/MyTeam_TextColor" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/PDS_lastname_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PDS_firstname_txt"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dip"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:gravity="center"
+            android:hint="@string/Last_Name_Hint"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColorHint="@color/MyTeam_TextColor" >
+        </EditText>
+        <Spinner
+            android:id="@+id/PDS_GenderSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_below="@+id/PDS_lastname_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:entries="@array/gender_list"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:nextFocusDown="@+id/PDS_DOB_Btn"
+            android:background="@drawable/text_bk_theme"
+            android:prompt="@string/Gender_Msg" />
+        <LinearLayout
+            android:id="@+id/PDS_dob_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PDS_GenderSpinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/PDS_DOB_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_bk_theme"
+                android:padding="5dp"
+                android:text="@string/Date_Hint"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <Button
+                android:id="@+id/PDS_DOB_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/date_picker_img"
+                android:onClick="showDatePicker"
+                android:textColor="@color/MyTeam_ButtonColor"
+                android:nextFocusDown="@+id/PDS_Designation_txt" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/PDS_Designation_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PDS_dob_layout"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dip"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:gravity="center"
+            android:hint="@string/Designation_Hint"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:textColorHint="@color/MyTeam_TextColor" >
+        </EditText>
+
+        <Button
+            android:id="@+id/PDS_Proceed_Btn"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PDS_Designation_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_bk_theme"
+       		android:padding="20dip"
+       		android:textColor="@color/MyTeam_ButtonColor"
+            android:text="@string/NEXT_msg" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

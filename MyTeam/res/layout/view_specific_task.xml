@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mt_mainbackground" >
+
+    <ScrollView
+        android:id="@+id/VST_mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/VST_Btn_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mt_mainbackground" >
+
+            <ImageView
+                android:id="@+id/VST_Task_Image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/VST_Header_Status"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="22dp"
+                android:contentDescription="@drawable/ic_launcher"
+                android:src="@drawable/task_icon" />
+
+            <TextView
+                android:id="@+id/VST_Header_Task_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="22dp"
+                android:layout_toLeftOf="@+id/VST_Percent_Txt"
+                android:layout_toRightOf="@+id/VST_Task_Image"
+                android:gravity="left"
+                android:singleLine="false"
+                android:text="10591"
+                android:background="@drawable/transparent1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VST_Header_Status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VST_Header_Task_ID"
+                android:layout_marginLeft="10dip"
+                android:layout_toLeftOf="@+id/VST_Percent_Txt"
+                android:layout_toRightOf="@+id/VST_Task_Image"
+                android:gravity="left"
+                android:singleLine="false"
+                android:text="Incomplete"
+                android:background="@drawable/transparent1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VST_Percent_Txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="10dip"
+                android:text="17%"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/MyTeam_TextColor"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/VST_Display_completed.."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/VST_Percent_Txt"
+                android:layout_marginRight="16dp"
+                android:text="Completed.."
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VST_TaskType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VST_Display_completed.."
+                android:layout_centerHorizontal="true"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VST_Display_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/VST_TaskType"
+                android:layout_marginLeft="14dp"
+                android:text="Subject:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <LinearLayout
+                android:id="@+id/VST_subject_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/VST_Display_subject"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/VST_Subject_Txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/transparent1"
+                    android:padding="10dip"
+                    android:singleLine="true"
+                    android:text="AABID IS MY NAME AND I AM THE B EST ..."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/MyTeam_TextColor" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/VST_Display_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/VST_subject_layout"
+                android:layout_marginLeft="14dp"
+                android:text="Task Description:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <LinearLayout
+                android:id="@+id/VST_desc_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/VST_Display_desc"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/VST_Desc_Txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/transparent1"
+                    android:ems="20"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:padding="10dip"
+                    android:singleLine="false"
+                    android:text="AABID IS MY NAME AND I AM THE B EST ...\nasdasd\nas\nasd	asd\nADadasdasd\nasdasdas\nasdasda	asdasdasd	asdasfasdas	afasfa\nsf====asdasdasdasd==da=sd\n=asd=as=da=sda=sda0sd0asd0as0da0s000000"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/MyTeam_TextColor" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/VST_date_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VST_desc_layout" >
+
+                <TextView
+                    android:id="@+id/VST_Display_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/VST_desc_layout"
+                    android:layout_marginLeft="14dp"
+                    android:text="DEADLINES:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/MyTeam_TextColor" />
+
+                <LinearLayout
+                    android:id="@+id/VST_Date_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/VST_Display_Date"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/VST_Start_Date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="1991-10-25"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/MyTeam_TextColor" />
+
+                    <TextView
+                        android:id="@+id/VST_End_Date"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="1991-10-25"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/MyTeam_TextColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/VST_Display_DateMsg_Layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/VST_Date_Layout"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/VST_Display_startdate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="Start Date"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/MyTeam_TextColor" />
+
+                    <TextView
+                        android:id="@+id/VST_Display_enddate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="End Date"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/MyTeam_TextColor" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/VST_Display_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/VST_date_relativelayout"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="14dip"
+                android:text="Location :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+               android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VST_Display_allocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/VST_Display_location"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="14dip"
+                android:text="ALLOCATION DETAILS :"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VST_Member_List_Txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VST_Display_allocation"
+                android:layout_margin="10dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/transparent1"
+                android:ems="20"
+                android:focusable="true"
+                android:gravity="center"
+                android:maxLines="4"
+                android:minLines="1"
+                android:singleLine="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/MyTeam_TextColor" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/VST_Btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/VST_COMMENTS_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="20dip"
+            android:textColor="@color/MyTeam_ButtonColor"
+            android:background="@drawable/button_bk_theme"
+            android:text="Comments" />
+
+        <Button
+            android:id="@+id/VST_STATUS_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:textColor="@color/MyTeam_ButtonColor"
+            android:background="@drawable/button_bk_theme"
+            android:layout_weight="0.5"
+            android:text="Status Update" />
+
+        <Button
+            android:id="@+id/VST_EDIT_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:background="@drawable/button_bk_theme"
+            android:layout_weight="0.5"
+            android:textColor="@color/MyTeam_ButtonColor"
+            android:text="EDIT TASK"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

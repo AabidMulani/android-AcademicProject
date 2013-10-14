@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mt_mainbackground" >
+
+  
+    <TextView
+        android:id="@+id/VED_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dip"
+        android:background="@drawable/header_background"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/MyTeam_TextColor" />
+
+    <ScrollView
+        android:id="@+id/VED_ScrollLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/VED_Header"
+        android:layout_alignRight="@+id/VED_Header"
+        android:layout_above="@+id/VED_Performane_Btn"
+        android:layout_below="@+id/VED_Header"
+        android:fillViewport="true"
+        android:padding="5dip"
+        android:scrollbarAlwaysDrawHorizontalTrack="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/VED_ProfilePic"
+                android:layout_width="110dip"
+                android:layout_height="110dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dip"
+                android:background="@color/WhiteSmoke"
+                android:src="@android:drawable/ic_menu_crop" />
+
+            <TextView
+                android:id="@+id/VED_FullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VED_ProfilePic"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dip"
+                android:layout_marginTop="15dp"
+                android:singleLine="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/MyTeam_TextColor" />
+            
+            <TextView
+                android:id="@+id/VED_Designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VED_FullName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dip"
+                android:singleLine="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VED_label1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VED_Designation"
+                android:background="@drawable/header_background"
+                android:gravity="fill"
+                android:text="@string/Personal_details_msg"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VED_DOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VED_label1"
+                android:layout_marginLeft="15dip"
+                android:layout_marginTop="24dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VED_Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/VED_DOB"
+                android:layout_alignBottom="@+id/VED_DOB"
+                android:layout_alignParentRight="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/VED_DOB"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/header_background"
+                android:text="@string/Contact_details_msg"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VED_CompleteAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="19dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VED_EmailAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/VED_CompleteAddr"
+                android:layout_marginTop="14dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/MyTeam_TextColor" />
+
+            <TextView
+                android:id="@+id/VED_MobileNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/VED_EmailAddr"
+                android:layout_marginTop="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/MyTeam_TextColor" />
+            
+            <LinearLayout
+            android:id="@+id/VED_Btton_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="10dip" >
+
+
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+            <Button
+                android:id="@+id/VED_Performane_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:padding="20dip"
+                android:textColor="@color/MyTeam_ButtonColor"
+                android:background="@drawable/button_bk_theme"
+                android:text="@string/Performance_msg" />
+
+</RelativeLayout>

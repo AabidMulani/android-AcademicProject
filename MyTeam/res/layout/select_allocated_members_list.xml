@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/mt_mainbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/SAML_Heading"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Large Text"
+            android:textColor="@color/MyTeam_HeaderColor"
+            android:background="@drawable/main_back_blue12"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/SAML_MainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="360sp"
+		android:padding="15dp"
+        android:foregroundGravity="center"
+        android:scrollbarSize="7dp"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+              
+            <Button
+                android:id="@+id/SAML_SelectAllBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+  				android:background="@drawable/button_bk_theme"
+  				android:padding="20dip"
+                android:text="SELECT ALL" 
+                android:textColor="@color/MyTeam_ButtonColor"/>
+
+            <LinearLayout
+                android:id="@+id/SAML_Scroll_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+        
+        <Button
+            android:id="@+id/SAML_BackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/button_bk_theme"
+            android:text="BACK" 
+            android:textColor="@color/MyTeam_ButtonColor"/>
+        
+        <Button
+            android:id="@+id/SAML_NextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_bk_theme"
+            android:singleLine="true"
+            android:text="NEXT" 
+            android:textColor="@color/MyTeam_ButtonColor"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

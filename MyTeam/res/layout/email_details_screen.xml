@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mt_mainbackground"
+    tools:context=".MemberDetailsActivity" >
+
+    
+    <LinearLayout
+        android:id="@+id/EDS_profilePic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/EDS_ContactDetails"
+        android:layout_above="@+id/user_layout"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" 
+        android:layout_margin="10dip"
+        android:gravity="center_horizontal">
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/UPLOAD_Pic_msg"
+            android:textColor="@color/White"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <ImageView
+            android:id="@+id/EDS_porfile_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/default_profile_pic" />
+
+    </LinearLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/user_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="18dp" >
+
+        <TextView
+            android:id="@+id/EDS_User_lbl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/EmailID_msg"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/White" />
+
+        <EditText
+            android:id="@+id/EDS_username_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EDS_User_lbl"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:hint="@string/Email_Hint"
+            android:textColorHint="@color/CornflowerBlue" >
+        </EditText>
+        
+        <EditText
+            android:id="@+id/EDS_PASSWORD_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EDS_username_txt"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/text_bk_theme"
+            android:ellipsize="start"
+            android:ems="20"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:hint="@string/Password_msg"
+            android:singleLine="true"
+            android:textColorHint="@color/CornflowerBlue">
+        </EditText>
+    </RelativeLayout>
+    
+    
+    <LinearLayout
+            android:id="@+id/EDS_Btton_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_layout"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_margin="10dip" >
+
+            <Button
+                android:id="@+id/EDS_Back_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginRight="10dip"
+                android:padding="20dip"
+                android:background="@drawable/button_bk_theme"
+                android:text="@string/BACK_msg" />
+
+            <Button
+                android:id="@+id/EDS_Proceed_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="10dip"
+                android:padding="20dip"
+                android:background="@drawable/button_bk_theme"
+                android:text="@string/PROCEED_msg" />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/EDS_ContactDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_back_blue12"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="@string/Email_details_msg"
+        android:textColor="@color/Black"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

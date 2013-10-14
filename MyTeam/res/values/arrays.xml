@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="gender_list">
+        <item >Gender..</item><item >Male</item>
+        <item >Female</item>
+        
+    </string-array>
+          <string-array name="Settings_menu_leader">
+        <item >CHANGE EMAIL ACCOUNT</item>
+        <item >LEAVE A GROUP</item>
+        <item >EDIT PERSONAL DETAILS</item>
+        
+    </string-array>
+              <string-array name="Settings_menu_member">
+        <item >CHANGE EMAIL ACCOUNT</item>
+        <item >EDIT PERSONAL DETAILS</item>
+        
+    </string-array>
+        <string-array name="state_list">
+            <item>State..</item><item >Andra Pradesh</item>
+            <item >Arunachal Pradesh</item>
+            <item >Assam</item>
+            <item >Bihar</item>
+            <item >Chhatisgarh</item>
+            <item >Goa</item>
+            <item >Gujarat</item>
+            <item >Haryana</item>
+            <item >Himachal Pradesh</item>
+            <item >Jammu and Kashmir</item>
+            <item >Jharkand</item>
+            <item >Karnataka</item>
+            <item >Kerala</item>
+            <item >Madya Pradesh</item>
+            <item >Maharashtra</item>
+            <item >Manipur</item>
+            <item >Meghalaya</item>
+            <item >Mizoram</item>
+            <item >Nagaland</item>
+            <item >Orissa</item>
+            <item >Punjab</item>
+            <item >Rajasthan</item>
+            <item >Sikkim</item>
+            <item >Tamil Nadu</item>
+            <item >Tripura</item>
+            <item >Uttaranchal</item>
+            <item >Uttar Pradesh</item>
+            <item >West Bengal</item>
+            
+        </string-array>
+        <string-array name="Question_List">
+            <item>Select Question..</item>
+            <item >What is your Nick Name?</item>
+            <item >What is your mothers maiden name?</item>
+            <item >Your birth place?</item>
+        </string-array>
+</resources>

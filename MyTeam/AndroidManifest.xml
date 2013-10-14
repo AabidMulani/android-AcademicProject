@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="myteam.main.forms"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:maxSdkVersion="17"
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:name="myteam.main.forms.MyTeam"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="myteam.main.forms.HomeScreen"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.main.forms.TeamList"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.main.forms.TaskList"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.main.forms.MoreSettings"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.main.forms.ChatScreen"
+            android:launchMode="singleInstance"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.team.management.JoinGroup"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.team.management.LeaveGroup"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.team.management.Waiting"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.startup.pages.LoginPage"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.team.register.EmployeeType"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.team.register.RecoveryDetails"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.team.register.ContactDetails"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.team.register.LoginDetails"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.team.register.PersonalDetails"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.team.editData.EditRecoveryDetails"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.team.editData.EditContactDetails"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.team.editData.EditLoginDetails"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.team.editData.EditPersonalDetails"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.team.editData.EditMemberScreen"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.team.management.ProfileDetails"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.view.member.ViewEmployee"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.startup.recovery.RecoverPassword"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.startup.recovery.SetNewPassword"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.task.insert.AddTaskPage"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.task.edit.EditTaskPage"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.task.view.ViewSelectedTask"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.task.insert.ShowMembersList"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.task.view.CommentScreen"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.view.member.Performance"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.team.editEmail.EditProfileData"
+            android:noHistory="false" >
+        </activity>
+        <activity
+            android:name="myteam.global.constants.Help"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.global.constants.Credits"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="myteam.startup.pages.Logo"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

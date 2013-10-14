@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mt_mainbackground" >
+
+    <!-- REPLACE ### with the xml initials -->
+
+    <LinearLayout
+        android:id="@+id/HS_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dip" >
+
+        <Button
+            android:id="@+id/HS_Home_Btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_weight="0.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/home_icon_theme" />
+
+        <Button
+            android:id="@+id/HS_Task_Btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/task_icon_theme" />
+
+        <Button
+            android:id="@+id/HS_Team_Btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/team_icon_theme" />
+
+        <Button
+            android:id="@+id/HS_More_Btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/more_icon_theme" />
+
+        <Button
+            android:id="@+id/HS_chat_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dip"
+            android:layout_weight="0.2"
+            android:adjustViewBounds="true"
+            android:background="@drawable/chat_icon1_theme" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/HS_Header_showType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Green"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/HS_Header_show_Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/HS_Header_showType"
+        android:singleLine="false"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Yellow" />
+
+    <ScrollView
+        android:id="@+id/HS_notification_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/HS_menu_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/HS_Add_newTask_Btn"
+        android:layout_margin="10dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/mt_notificationboard"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/HS_Outer_LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/HS_inner_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dip"
+                android:background="@drawable/mt_mainbackground"
+                android:gravity="center"
+                android:text="@string/Notification_msg"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Yellow" />
+
+            <LinearLayout
+                android:id="@+id/HS_inner_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/HS_Add_newTask_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/HS_Header_show_Welcome"
+        android:layout_marginLeft="45dip"
+        android:layout_marginRight="45dip"
+        android:layout_marginTop="37dp"
+        android:padding="20dip"
+        android:background="@drawable/button_bk_theme"
+        android:text="@string/AddNewTask_msg"
+        android:textColor="@color/MyTeam_ButtonColor" />
+
+</RelativeLayout>

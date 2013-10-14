@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    android:fillViewport="true" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/mt_mainbackground">
+
+        <TextView
+            android:id="@+id/LSA_welcome_Txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/Welcome_msg"
+            android:background="@drawable/main_back_blue12"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/MyTeam_HeaderColor" />
+
+        <Button
+            android:id="@+id/LSA_newAccount_Btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LSA_welcome_Txt"
+            android:layout_margin="10dip"
+            android:padding="20dip"
+            android:textColor="@color/MyTeam_ButtonColor"
+            android:background="@drawable/button_bk_theme"
+            android:text="@string/NewAccount_msg" />
+
+        <RelativeLayout
+            android:id="@+id/LSA_Center_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LSA_newAccount_Btn"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/toast_bk" >
+
+            <TextView
+                android:id="@+id/LSA_login_Txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="15dip"
+                android:gravity="left"
+                android:text="@string/Login_msg"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/MyTeam_TextColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/LSA_belowLogin_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/LSA_login_Txt"
+                android:layout_below="@+id/LSA_login_Txt"
+                android:layout_margin="1dip"
+                android:text="@string/BelowLogin_msg"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/MyTeam_TextColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/LSA_UserName_Txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/LSA_belowLogin_msg"
+                android:layout_below="@+id/LSA_belowLogin_msg"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/text_bk_theme"
+                android:ellipsize="start"
+                android:ems="20"
+                android:gravity="center"
+                android:hint="@string/Username_msg"
+                android:inputType="textCapCharacters"
+                android:singleLine="true"
+                android:textColor="@color/MyTeam_TextColor"
+                android:textColorHint="@color/Black" >
+                
+            </EditText>
+
+            <EditText
+                android:id="@+id/LSA_PassWord_Txt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/LSA_UserName_Txt"
+                android:layout_below="@+id/LSA_UserName_Txt"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/text_bk_theme"
+                android:ellipsize="start"
+                android:ems="20"
+                android:gravity="center"
+                android:hint="@string/Password_msg"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/MyTeam_TextColor"
+                android:textColorHint="@color/Black" />
+
+            <CheckBox
+                android:id="@+id/LSA_RememberMe_ChkBx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/LSA_PassWord_Txt"
+                android:layout_below="@+id/LSA_PassWord_Txt"
+                android:layout_marginLeft="10dip"
+                android:text="@string/RememberMe_msg"
+                android:textColor="@color/SlateGray"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/LSA_Forgot_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/LSA_login_Txt"
+                android:text="@string/ForgotPassword_msg"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/SlateBlue"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/LSA_Login_Btn"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:padding="20dip"
+            android:layout_below="@+id/LSA_Center_Layout"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/MyTeam_ButtonColor"
+            android:background="@drawable/button_bk_theme"
+            android:text="@string/Login_msg" />
+
+    </RelativeLayout>
+  
+</ScrollView>

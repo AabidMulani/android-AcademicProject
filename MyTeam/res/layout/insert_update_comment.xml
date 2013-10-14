@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/IUC_seekbar_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dip"
+        android:textColor="@color/MyTeam_TextColor"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <SeekBar
+        android:id="@+id/IUC_statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dip"
+        android:layout_toLeftOf="@+id/IUC_seekbar_value"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/IUC_Commnt_textbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/IUC_statusBar"
+        android:singleLine="false"
+        android:minLines="4"
+        android:textColor="@color/MyTeam_HeaderColor"
+        android:background="@drawable/comment_border"
+        android:hint="@string/Comment_msg"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

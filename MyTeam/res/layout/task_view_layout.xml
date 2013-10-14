@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="7dip" 
+    android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/TVL_TaskID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+			android:layout_centerHorizontal="true"
+            android:paddingTop="2dip"
+            android:text="TITLE"
+            android:textColor="@color/MyTeam_TextColor"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/TVL_TaskImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TVL_TaskTitle"
+            android:layout_alignBottom="@+id/TVL_TaskSubject"
+            android:layout_below="@+id/TVL_TaskID"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="4dip"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/TVL_TaskTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVL_TaskID"
+            android:layout_toRightOf="@+id/TVL_TaskImage"
+            android:padding="2dp"
+            android:paddingLeft="10dp"
+            android:text="SHOW TITLE"
+            android:textColor="@color/MyTeam_TextColor"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+       <TextView
+            android:id="@+id/TVL_TaskSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/TVL_TaskImage"
+            android:layout_below="@+id/TVL_TaskTitle"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="2dp"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/MyTeam_TextColor"
+            android:text="THIS WILL SHOW SUBJECT asdasd"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+ <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/TVL_TaskImage">
+
+        <TextView
+            android:id="@+id/TVL_StartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="[xx-xx-xxxx]"
+            android:textColor="@color/MyTeam_TextColor"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/TVL_EndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="[xx-xx-xxxx]"
+            android:textColor="@color/MyTeam_TextColor"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+ </LinearLayout>
+
+
+</RelativeLayout>
